@@ -48,7 +48,6 @@
 ![Screenshot 180354](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-24%20180354.png)
 ![Screenshot 180545](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-24%20180545.png)
 ![Screenshot 181225](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-24%20181225.png)
-![Screenshot 2025-06-24 181803](https://github.com/user-attachments/assets/e5413074-6128-4b98-bb97-72040e09d26a)
-
+![Screenshot 2025-06-24 181803](https://github.com/user-attachments/assets/e98e3545-7288-4243-8fbf-db8ca656f559)
 
 ![Screenshot 181956](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-24%20181956.png)
