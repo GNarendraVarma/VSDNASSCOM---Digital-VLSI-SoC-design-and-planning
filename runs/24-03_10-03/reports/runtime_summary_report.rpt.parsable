@@ -1,0 +1,6 @@
+2-prep 1.7429999999999999
+3-yosys 75.358
+4-opensta 1.947
+5-verilog2def_openroad 3.273
+6-ioPlacer 1.9729999999999999
+7-replace 19.554
