@@ -80,6 +80,8 @@ Copy the clone URL from the repository and run the following command in the Open
 
 git clone https://github.com/nickson-jose/vsdstdcelldesign
 
+- Then we have to open the mag file of the inverter which is being present as we are going to work on that inverted file only which is a .mag file and we are going to open it with the help of the magic tool and later calculate some of the metrics which is being done below:
+
 ![Screenshot 163413](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20163413.png)
 ![Screenshot 163436](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20163436.png)
 ![Screenshot 163451](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20163451.png)
