@@ -103,13 +103,18 @@ git clone https://github.com/nickson-jose/vsdstdcelldesign
 ![Screenshot 180609](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20180609.png)
 ![Screenshot 180712](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20180712.png)
 ![Screenshot 180724](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20180724.png)
+## Rise Transition=2.24471-2.18209=0.06262ns
 ![Screenshot 181019](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20181019.png)
 ![Screenshot 181052](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20181052.png)
+
 ![Screenshot 181104](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20181104.png)
+## Fall time =2.17981-2.11976=0.06005ns
 ![Screenshot 181319](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20181319.png)
 ![Screenshot 181329](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20181329.png)
+## Propagation Delay=2.21097-2.15=0.06097ns
 ![Screenshot 181502](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20181502.png)
 ![Screenshot 181514](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20181514.png)
+## Cell Fall delay = 4.07752-4.05=0.02752ns
 # Introduction to Magic Tool Options and DRC Rules by Tim Edwards
 
 This document introduces the use of the **Magic VLSI Layout Tool**, focusing on Design Rule Checking (DRC) and related tool options as explained by **Tim Edwards**.
