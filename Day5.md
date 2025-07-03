@@ -161,7 +161,7 @@ The final routed design is output in DEF or GDS format, ready for signoff and fa
 
 ---
 
-**End of THEORY Section**
+# LAB:
 
 ![Screenshot 161731](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/5/Screenshot%202025-07-01%20161731.png)
 ![Screenshot 161920](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/5/Screenshot%202025-07-01%20161920.png)
