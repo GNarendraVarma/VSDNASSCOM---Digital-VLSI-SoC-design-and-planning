@@ -35,3 +35,4 @@ Here in the first lab we though about the basics on how to run the OPENLANE what
 - So, flip flop ratio is (1613/14876)*100 = 10.843%
 ![Screenshot 181447](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/1/Screenshot%202025-06-20%20181447.png)
 ![Screenshot 181537](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/1/Screenshot%202025-06-20%20181537.png)
+- So, from the above lab we have got to know where the lef files would be present and where the different pdks would be present and where the information of our synthesis not only synthesis but what ever we run would be stored in our given openlane.
