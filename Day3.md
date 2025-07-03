@@ -78,7 +78,6 @@ To begin working with the standard cell design lab in OpenLane, follow the steps
 
 Copy the clone URL from the repository and run the following command in the OpenLane terminal:
 
-```bash
 git clone https://github.com/nickson-jose/vsdstdcelldesign
 
 ![Screenshot 163413](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20163413.png)
