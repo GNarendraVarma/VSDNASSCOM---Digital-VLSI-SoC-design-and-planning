@@ -127,8 +127,8 @@ To begin working with the lab:
 
 Use the following command in your terminal:
 
-wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
-tar -xvzf drc_tests.tgz
+- wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+- tar -xvzf drc_tests.tgz
 
 
 ![Screenshot 182638](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20182638.png)
