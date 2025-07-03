@@ -160,6 +160,137 @@ Maintaining proper timing margins ensures:
 - Functional correctness of the entire chip
 
 # LAB:
+
+# Adding a New Standard Cell and Timing Analysis in OpenLane
+
+## Steps to Convert Grid Information Into Track Information
+
+- The `sky130_inv.mag` file contains detailed information about the standard cell such as:
+  - Power and ground connections (P/G)
+  - Port definitions
+  - Logical function and internal layout
+
+- OpenLane does not require full layout from `.mag`; it uses LEF (Library Exchange Format) which includes:
+  - Cell boundary dimensions
+  - Power and ground rail locations
+  - I/O port locations
+
+- Hence, `.mag` is converted to `.lef` for use in full-chip designs like `picorv32a`.
+
+## Standard Cell Design Guidelines
+
+- **Port Placement**: Place input/output ports at routing track intersections.
+- **Cell Dimensions**: Height and width should be odd multiples of vertical/horizontal pitch.
+- **Tracks**:
+  - Defined by metal layers (e.g., met1, met2)
+  - `tracks.info` file gives pitch, number of tracks, layer details
+
+## LEF Extraction
+
+- Ensure the layout aligns with the routing grid (tracks.info)
+- Use `lef write` command in tkcon to generate LEF
+- LEF files:
+  - **Cell LEF**: Abstract view of cell (boundary, pins, layers)
+  - **Tech LEF**: Routing layers, vias, DRC info
+
+## Timing Libraries & Including New Cell in Synthesis
+
+- Liberty files (.lib) define timing/power for cells under different PVT corners.
+- Copy `sky130_vsdinv.lef` and `sky130.lib*` to `picorv32a/src`
+- Modify `config.tcl`:
+  - `LIB_SYNTH`, `EXTRA_LEFS`, etc.
+- Run synthesis via OpenLane and verify if `sky130_vsdinv` is used.
+
+## Running Synthesis with OpenSTA
+
+```tcl
+docker ./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+set ::env(SYNTH_SIZING) 1
+run_synthesis
+```
+
+- Create `pre_sta.conf` and `my_base.sdc` (clock, load, delay definitions)
+- Run `sta pre_sta.conf`
+
+## Synthesis ECO for Slack Fixing
+
+- Edit OpenLane synthesis config using commands:
+
+```tcl
+prep -design picorv32a -tag 01-04_12-54 -overwrite
+set ::env(SYNTH_STRATEGY) "AREA 0"
+set ::env(SYNTH_SIZING) 1
+run_synthesis
+```
+
+- If WNS and TNS are still negative, proceed to floorplan and placement:
+
+```tcl
+init_floorplan
+place_io
+tap_decap_or
+run_placement
+```
+
+## Define Timing Constraints
+
+- Edit `my_base.sdc` with:
+
+```tcl
+create_clock -period 10 [get_ports clk]
+set_input_delay 2 -clock clk [all_inputs]
+set_output_delay 2 -clock clk [all_outputs]
+set_max_fanout 5 [all_outputs]
+set_driving_cell -lib_cell INVX1 -pin Y [all_inputs]
+set_load 0.5 [all_outputs]
+```
+
+- Re-run `sta pre_sta.conf`
+
+## Netlist Replacement and Floorplan to CTS
+
+- Replace old netlist with ECO netlist.
+- Re-run:
+
+```tcl
+run_synthesis
+init_floorplan
+run_placement
+run_cts
+```
+
+## Verifying CTS
+
+- OpenROAD uses CTS script at `scripts/tcl_commands/cts.tcl`
+- Configuration includes:
+  - `CTS_CLK_BUFFER_LIST`
+  - `CTS_ROOT_BUFFER`
+  - `CTS_MAX_CAP`
+
+## Real Clock Timing Analysis
+
+```tcl
+openroad
+read_lef [path_to_merged.lef]
+read_def [path_to_cts.def]
+write_db pico_cts.db
+exit
+
+openroad
+read_db pico_cts.db
+read_verilog [netlist]
+read_liberty [lib_files]
+read_sdc my_base.sdc
+set_propagated_clock [all_clocks]
+report_timing
+```
+
+- Use only typical corners for real-clock-based STA.
+
 ![Screenshot 165707](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/4/Screenshot%202025-06-25%20165707.png)
 ![Screenshot 165754](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/4/Screenshot%202025-06-25%20165754.png)
 ![Screenshot 165804](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/4/Screenshot%202025-06-25%20165804.png)
