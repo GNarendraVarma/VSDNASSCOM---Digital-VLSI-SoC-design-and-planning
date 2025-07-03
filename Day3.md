@@ -1,3 +1,77 @@
+# THEORY:
+# CMOS Fabrication Process – 16 Mask Flow
+## 1. Active Region Formation
+
+**Substrate:** Lightly P-doped silicon wafer.
+
+**Isolation (LOCOS method):**
+- Grow 40 nm of SiO₂.
+- Deposit 80 nm of Si₃N₄.
+- Apply photoresist and use Mask-1 to define active regions.
+- Expose to UV light, remove unmasked areas.
+- Strip photoresist and grow thick oxide in exposed areas.
+- Remove Si₃N₄ using hot phosphoric acid.
+
+## 2. Well Formation (Twin-Tub Process)
+
+- Apply photoresist with Mask-2 to define N-well regions.
+- Apply Mask-3 to define P-well regions.
+- Perform ion implantation:
+  - Boron for P-well.
+  - Phosphorus for N-well.
+
+## 3. Gate Terminal Formation
+
+**Threshold Voltage Adjustment:**
+- Mask-4: Implant Boron for PMOS.
+- Mask-5: Implant Phosphorus or Arsenic for NMOS.
+
+**Gate Formation:**
+- Strip damaged oxide and re-grow gate-quality SiO₂.
+- Deposit polysilicon.
+- Pattern gate using Mask-6.
+
+## 4. Lightly Doped Drain (LDD) Formation
+
+- Mask-7: Lightly dope N⁻ for NMOS.
+- Mask-8: Lightly dope P⁻ for PMOS.
+- Deposit and etch oxide spacers using anisotropic etching.
+
+**Purpose:** Reduces electric field near the drain to prevent hot carrier degradation in short-channel devices.
+
+## 5. Source and Drain Formation
+
+- Add screen oxide to prevent ion channeling.
+- Mask-9: Heavily dope N⁺ for NMOS.
+- Mask-10: Heavily dope P⁺ for PMOS.
+- Perform high-temperature annealing to activate dopants.
+
+## 6. Local Interconnect Formation
+
+- Remove oxide over source, drain, and gate regions.
+- Deposit Titanium to form TiSi₂ (silicide).
+- Pattern using Mask-11.
+- Clean residual Titanium Nitride using RCA cleaning.
+
+## 7. Higher Metal Layer Formation
+
+**Planarization:**
+- Deposit doped oxide (PSG or BPSG).
+- Perform CMP (Chemical Mechanical Polishing).
+
+**Metallization:**
+- Mask-12: Etch first contact vias.
+- Mask-13: Deposit and pattern first Aluminum layer.
+- Mask-14: Etch second contact vias.
+- Mask-15: Deposit and pattern second Aluminum layer.
+- Mask-16: Define final pad openings for bonding.
+
+## Summary
+
+The 16-mask CMOS process integrates NMOS and PMOS transistors using well-defined photolithographic and doping steps. This process enables high-performance, scalable, and reliable IC fabrication suitable for modern digital circuits.
+
+
+# LAB:
 ![Screenshot 163413](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20163413.png)
 ![Screenshot 163436](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20163436.png)
 ![Screenshot 163451](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20163451.png)
