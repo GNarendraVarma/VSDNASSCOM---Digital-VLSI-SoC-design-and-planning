@@ -20,6 +20,8 @@ Here we were taught how to make a good floorplan and also we were taught about t
 - In characterization flow we would first read the SPICE model files which have the device parameters, then import the etlist which we have extracted from the spice simulators, identify the buffer behaviour and understand their drive strength and signal propagation, then parsing the subcircuits as defined in our spice heirarchu, then give the powre supplies along with the ground to our circuit then apply the input stimuls to stimulate the switching, add appropriate output load capacitance and finally dfine the simulation control command
 
 # LAB:
+- Here in this lab we have performed the floorplan and also  the placment process and we have used the magic tools to check how our chip would be looking and all the data is being stored in the runs folder so when we run our floorpland and placement using the run_floorplan and run_placement they are being stored in the runs folder of the picorv32a. So, here is the below all the steps which are being done and performed.
+
 ![Screenshot 182439](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/2/Screenshot%202025-06-20%20182439.png)
 ![Screenshot 184256](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/2/Screenshot%202025-06-20%20184256.png)
 ![Screenshot 184332](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/2/Screenshot%202025-06-20%20184332.png)
