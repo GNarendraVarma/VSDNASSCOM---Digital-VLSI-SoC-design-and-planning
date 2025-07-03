@@ -100,6 +100,37 @@ The 16-mask CMOS process integrates NMOS and PMOS transistors using well-defined
 ![Screenshot 181329](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20181329.png)
 ![Screenshot 181502](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20181502.png)
 ![Screenshot 181514](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20181514.png)
+# Introduction to Magic Tool Options and DRC Rules by Tim Edwards
+
+This document introduces the use of the **Magic VLSI Layout Tool**, focusing on Design Rule Checking (DRC) and related tool options as explained by **Tim Edwards**.
+
+## Reference Links
+
+- **Skywater PDK Design Rules:**  
+  [Skywater Design Rules Documentation](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html)
+
+- **Official Skywater GitHub Repository:**  
+  [github.com/google/skywater-pdk](https://github.com/google/skywater-pdk)
+
+- **Magic VLSI Layout Tool (Tutorial & Docs):**  
+  [opencircuitdesign.com/magic](https://opencircuitdesign.com/magic)
+
+  - Recommended Sections:  
+    - **Section 2:** Introduction to Layout  
+    - **Section 6:** Design Rule Checking and Tool Configuration
+
+## Lab Preparation
+
+To begin working with the lab:
+
+### Download Lab Files
+
+Use the following command in your terminal:
+
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+tar -xvzf drc_tests.tgz
+
+
 ![Screenshot 182638](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20182638.png)
 ![Screenshot 182745](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20182745.png)
 ![Screenshot 182802](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20182802.png)
