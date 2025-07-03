@@ -1,8 +1,8 @@
 # THEORY:
 In the theory we were first being shown a sample QFN-48 package and discussed about the various compnents of a chip which is being present inside a package and the different compnents which are being present in a chip are as follow:
-1.Pads: The pads are basically the ones which are being used to for a connection between the IC and the chip being present it is used for sending the electrical singlas inside the chip.
-2.Core: The core is the main part of the chip where we have the digital logic components being placed. Here all the main elements like the gates, mux, flip flops are being placed whihc do the functioning of our processor.
-3.Die: The Die is the main part where the core is being placed a die can contain more than one core being present in it.
+> 1.Pads: The pads are basically the ones which are being used to for a connection between the IC and the chip being present it is used for sending the electrical singlas inside the chip.
+> 2.Core: The core is the main part of the chip where we have the digital logic components being placed. Here all the main elements like the gates, mux, flip flops are being placed whihc do the functioning of our processor.
+> 3.Die: The Die is the main part where the core is being placed a die can contain more than one core being present in it.
 
 Then we have learnt about the foundary IP's these are the components which are being provided by the desinger. These are usually pre designed in nature and are being tested by the foundry. These include the PLL, ADC, SRAM and various other compnents.
 Macors : The macros are the ones which are very similary to the Foundry IPs but the only difference is that these have pure digital logic which are being premade for a common use case . Macros can be of various types like the GPIO or the SPI, etc.
