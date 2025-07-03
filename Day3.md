@@ -72,6 +72,15 @@ The 16-mask CMOS process integrates NMOS and PMOS transistors using well-defined
 
 
 # LAB:
+## Cloning the VSD Standard Cell Design Repository in OpenLane
+
+To begin working with the standard cell design lab in OpenLane, follow the steps below
+
+Copy the clone URL from the repository and run the following command in the OpenLane terminal:
+
+```bash
+git clone https://github.com/nickson-jose/vsdstdcelldesign
+
 ![Screenshot 163413](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20163413.png)
 ![Screenshot 163436](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20163436.png)
 ![Screenshot 163451](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/3/Screenshot%202025-06-23%20163451.png)
