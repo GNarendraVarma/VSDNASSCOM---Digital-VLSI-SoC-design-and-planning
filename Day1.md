@@ -1,4 +1,4 @@
-#THEORY:
+# THEORY:
 In the theory we were first being shown a sample QFN-48 package and discussed about the various compnents of a chip which is being present inside a package and the different compnents which are being present in a chip are as follow:
 1.Pads: The pads are basically the ones which are being used to for a connection between the IC and the chip being present it is used for sending the electrical singlas inside the chip.
 2.Core: The core is the main part of the chip where we have the digital logic components being placed. Here all the main elements like the gates, mux, flip flops are being placed whihc do the functioning of our processor.
@@ -18,7 +18,7 @@ Then we were being thought about the RTL to GDS flow like what do happens in thi
 6.GDS-II: After routing properly we send the chip for the GDS-II process but before sending it we would check for any DRC voilations occuring in our model and then send them finally for the GDS-II process and after this the foundary use this GDS-II information only to make the chip for us and they would give it to us.
 In the whole above process we would be using different tools such as the Yosys for RTL generation, ABC for cell mapping ioplacer for the input and output ports, PDN for the power distribution, RePlace for the global placement, Triton CTS for the Clock Tree synthesis and Magic for the checking of any DRC voilations occuring along in the compnent or the whole chip.
 
-#LAB:
+# LAB:
 Here in the first lab we though about the basics on how to run the OPENLANE what are the different files which would be required to us for the geration from the RTL to GDS II, we were being though about the PDK(Process Design Kits), about the lef files, def files, spef files and where would the results be present where would these all the information files such as the lef, def, spef would be present and how to run all of them and finally we were being taught how to calculate the total flop ratio after doing the synthesis part.
 ![Screenshot 180446](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/1/Screenshot%202025-06-20%20180446.png)
 ![Screenshot 180522](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/1/Screenshot%202025-06-20%20180522.png)
