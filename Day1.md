@@ -29,5 +29,9 @@ Here in the first lab we though about the basics on how to run the OPENLANE what
 ![Screenshot 181253](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/1/Screenshot%202025-06-20%20181253.png)
 ![Screenshot 181721](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/1/Screenshot%202025-06-20%20181721.png)
 ![Screenshot 181742](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/1/Screenshot%202025-06-20%20181742.png)
+- Flop Ratio can be calculated from the above information:
+- Flip flop ratio = (No. of Dff/No. of Cells)*100
+- So, from the above two images No. of Dff=1613 and No.of Cells = 14876
+- So, flip flop ratio is (1613/14876)*100 = 10.843%
 ![Screenshot 181447](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/1/Screenshot%202025-06-20%20181447.png)
 ![Screenshot 181537](https://raw.githubusercontent.com/GNarendraVarma/VSDNASSCOM---Digital-VLSI-SoC-design-and-planning/master/1/Screenshot%202025-06-20%20181537.png)
