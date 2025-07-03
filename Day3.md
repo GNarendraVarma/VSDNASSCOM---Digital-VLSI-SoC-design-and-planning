@@ -1,4 +1,35 @@
 # THEORY:
+# Introduction to SPICE Deck for Circuit Simulation
+
+The first step in running a SPICE simulation is to create a **SPICE deck**. This file contains all the necessary details to simulate an analog or digital circuit at the transistor level.
+
+## Key Components of a SPICE Deck
+
+### 1. Component Connectivity
+
+Each component in the circuit must be connected using named **nodes**. These define how current flows through the circuit.
+
+- **Example:**  
+  For a transistor, connectivity includes:
+  - Drain
+  - Gate
+  - Source
+  - Substrate (bulk)
+
+The **substrate connection** is crucial because it influences the **threshold voltage** of both NMOS and PMOS transistors.
+
+### 2. Component Parameters
+
+Each transistor must include:
+
+- **W/L ratio**: Width-to-length ratio of the MOSFET channel.  
+  These determine the current-driving strength of the transistors.
+
+- **Example:**
+  ```spice
+  M1 out in Vss Vss nmos W=1u L=0.1u
+  M2 out in Vdd Vdd pmos W=1u L=0.1u
+
 # CMOS Fabrication Process – 16 Mask Flow
 ## 1. Active Region Formation
 
